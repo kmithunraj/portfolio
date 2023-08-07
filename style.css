@@ -112,6 +112,83 @@ body{
     color: var(--pri-txt-col);
     box-shadow: 0 0 10px 0 var(--ter-bg-col);
 }
+.expertise-section{
+    width: 100%;
+    box-sizing: border-box;
+    min-height: calc(100vh-80px);
+    padding: 10px;
+    padding-top: 80px;
+}
+.expertise-section p{
+    margin-bottom: 0px;
+    color: #279d00;
+    text-shadow: 0px 0px 3px #279d00;
+}
+.expertise-section h1{
+    text-align: center;
+    color: #279d00;
+    text-shadow: 0px 0px 5px #279d00;
+    font-size: 5rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0px;
+}
+.expertise-section div{
+    border-left: #cecece 2px solid;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.expertise-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.expertise-wrapper div{
+    width: 450px;
+    height: 350px;
+    margin: 25px;
+    border: #cecece 4px solid;
+}
+.expertise-wrapper div div{
+
+    border: none;
+    border-left: #cecece 2px solid;
+    box-shadow: none;
+    height: auto;
+    margin: 0px;
+    margin-left: 10px;
+    width: 400px;
+}
+.expertise-wrapper div div h3{
+    margin: 10px;
+    color: #cecece;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.expertise-content-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #cecece;
+}
+.expertise-content-header i{
+    font-size: 50px;
+}
+.expertise-content-header h3 span{
+    background: linear-gradient(to top, #1e00ff 40%, transparent 40%);
+    font-family: 'Courier New', Courier, monospace;
+}
+.expertise-wrapper div div p{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #cecece;
+    font-size: 20px;
+    color: #cecece;
+    text-shadow: none;
+    font-family: monospace;
+}
 
 
 @media (max-width: 850px) {
@@ -157,7 +234,7 @@ body{
     }
     .mob-nav-links {
         height: 100vh;
-        width: 50vw;
+        width: 55vw;
         margin: 0;
         padding: 0;
         background-color: var(--pri-bg-col);
