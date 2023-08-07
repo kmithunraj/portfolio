@@ -1,0 +1,210 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+:root{
+    --pri-bg-col: #222222;
+    --sec-bg-col: #656565;
+    --ter-bg-col: #000000;
+    --pri-txt-col: #6f6f6f;
+}
+#custom-cursor {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 75px; /* adjust the size of your cursor image */
+    height: 75px;
+    background-image: url('./src/cursor.png');
+    background-size: cover;
+    pointer-events: none;
+    z-index: 9999;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--pri-bg-col);
+}
+.main-wrap{
+    width: 100vw;
+    height: 100vh;
+}
+.main-wrap header{
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    background-color: var(--pri-bg-col);
+    box-shadow: 0 0 10px 0 var(--ter-bg-col);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.main-wrap header h1{
+
+    color: #279d00;
+    text-shadow: 0px 0px 5px #279d00;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.mob-nav{
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    background-color: var(--pri-bg-col);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.toggle-menu{
+    display: none;
+}
+.mob-nav-links{
+    position: absolute;
+    right: 0;
+}
+.mob-nav-links ul{
+    list-style: none;
+    display:inline; 
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+.mob-nav-links ul br{
+    display: none;
+}
+.mob-nav-links ul li{
+    display: inline-block;
+    padding: 10px;
+}
+.mob-nav-links ul .nav-header{
+    display: none;
+}
+.mob-nav-links ul li a{
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #cecece;
+    text-shadow: 0px 0px 2px #cecece;
+}
+.main-wrap .container-wrap{
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    background-color: var(--pri-bg-col);
+}
+.main-wrap footer p{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pri-bg-col);
+    color: var(--pri-txt-col);
+    box-shadow: 0 0 10px 0 var(--ter-bg-col);
+}
+
+
+@media (max-width: 850px) {
+    custom-cursor{
+        display: none;
+    }
+    .toggle-menu{
+        display: block;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        width: 40px;
+        border: none;
+        cursor: pointer;
+    }
+    .toggle-menu .div1{
+        margin: 4px;
+        height: 4px;
+        background-color: var(--sec-bg-col);
+        border: none;
+        border-radius: 5px;
+        background-color: #279d00;
+        box-shadow: 0px 0px 5px #279d00;
+    }
+    .toggle-menu .div2{
+        margin: 4px;
+        height: 4px;
+        width: 60%;
+        background-color: var(--sec-bg-col);
+        border: none;
+        border-radius: 5px;
+        background-color: #279d00;
+        box-shadow: 0px 0px 5px #279d00;
+    }
+    .toggle-menu .div3{
+        margin: 4px;
+        height: 4px;
+        background-color: var(--sec-bg-col);
+        border: none;
+        border-radius: 5px;
+        background-color: #279d00;
+        box-shadow: 0px 0px 5px #279d00;
+    }
+    .mob-nav-links {
+        height: 100vh;
+        width: 50vw;
+        margin: 0;
+        padding: 0;
+        background-color: var(--pri-bg-col);
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 11;
+        transition: all 0.3s ease-in-out;
+    }
+    .mob-nav-links ul .nav-header{
+        display: block;
+    }
+    .nav-header h1{
+        padding-top: 10px;
+    }
+    .mob-nav-links ul{
+        list-style: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    .mob-nav-links ul br{
+        display: block;
+    }
+    .mob-nav-links ul li{
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+    .mob-nav-links ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #cecece;
+    }
+    .nav-screen{
+        width: 100vw;
+        height: 100vh;
+        background-color: #525252;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        opacity: 0.6;
+        backdrop-filter: blur(5px);
+        display: none;
+    }
+
+    
+    
+}
