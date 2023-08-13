@@ -344,6 +344,7 @@ body{
     align-items: center;
     flex-direction: column;
     border-left: 0px;
+    margin: 0;
 }
 .certificates-wrapper .project img{
     width: 800px;
